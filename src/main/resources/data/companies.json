@@ -1,0 +1,46 @@
+{
+	"companies": [
+		{
+			"id": 1,
+			"name": "NewTek Solutions",
+			"description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
+			"email": "contact@teksolutions.com",
+			"phone": "555-555-5555"
+		},
+		{
+			"id": 2,
+			"name": "Veneer Solutions",
+			"description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
+			"email": "contact@loremipsum.com",
+			"phone": "555-555-5555"
+		},
+		{
+			"id": 3,
+			"name": "Dolor Cloud",
+			"description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
+			"email": "contact@dolorsitamet.com",
+			"phone": "555-555-5555"
+		},
+		{
+			"id": 4,
+			"name": "Alpha Elite",
+			"description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
+			"email": "contact@adipisicingelit.com",
+			"phone": "555-555-5555"
+		},
+		{
+			"id": 5,
+			"name": "Browning Technologies",
+			"description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
+			"email": "contact@consecteturadipisicing.com",
+			"phone": "555-555-5555"
+		},
+		{
+			"id": 6,
+			"name": "Port Solutions INC",
+			"description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
+			"email": "contact@ipsumlorem.com",
+			"phone": "555-555-5555"
+		}
+	]
+}

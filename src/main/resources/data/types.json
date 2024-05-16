@@ -1,0 +1,12 @@
+{
+	"types": [
+		{
+			"id": 1,
+			"title": "Full-Time"
+		},
+		{
+			"id": 2,
+			"title": "Part-Time"
+		}
+	]
+}
