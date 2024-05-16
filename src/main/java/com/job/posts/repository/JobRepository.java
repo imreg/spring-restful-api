@@ -25,8 +25,9 @@ public class JobRepository implements JobRepositoryInterface {
 	
 	@Override
 	public List<JobRecord> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.jdbcClient.sql("SELECT * FROM Job")
+				.query(JobRecord.class)
+				.list();
 	}
 
 	@Override
