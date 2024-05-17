@@ -12,21 +12,21 @@ import org.springframework.stereotype.Service;
 import com.job.posts.entity.Company;
 import com.job.posts.entity.Job;
 import com.job.posts.entity.Type;
-import com.job.posts.repository.interfaces.CompanyJpaRepositoryInterface;
-import com.job.posts.repository.interfaces.JobJpaRepositoryInterface;
-import com.job.posts.repository.interfaces.TypeJpaRepositoryInterface;
+import com.job.posts.repository.CompanyRepositoryInterface;
+import com.job.posts.repository.JobRepositoryInterface;
+import com.job.posts.repository.TypeRepositoryInterface;
 
 @Service
 public class JobService {
 
-    private final JobJpaRepositoryInterface jobRepository;
-    private final CompanyJpaRepositoryInterface companyRepository;
-    private final TypeJpaRepositoryInterface typeRepository;
+    private final JobRepositoryInterface jobRepository;
+    private final CompanyRepositoryInterface companyRepository;
+    private final TypeRepositoryInterface typeRepository;
 
     public JobService(
-    		JobJpaRepositoryInterface jobRepository, 
-    		CompanyJpaRepositoryInterface companyRepository,
-    		TypeJpaRepositoryInterface typeRepository
+    		JobRepositoryInterface jobRepository, 
+    		CompanyRepositoryInterface companyRepository,
+    		TypeRepositoryInterface typeRepository
     		) {
         this.jobRepository = jobRepository;
         this.companyRepository = companyRepository;

@@ -5,13 +5,13 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.job.posts.entity.Company;
-import com.job.posts.repository.interfaces.CompanyJpaRepositoryInterface;
+import com.job.posts.repository.CompanyRepositoryInterface;
 
 @Service
 public class CompanyService {
-    private final CompanyJpaRepositoryInterface companyRepository;
+    private final CompanyRepositoryInterface companyRepository;
 
-    public CompanyService(CompanyJpaRepositoryInterface companyRepository) {
+    public CompanyService(CompanyRepositoryInterface companyRepository) {
         this.companyRepository = companyRepository;
     }
     

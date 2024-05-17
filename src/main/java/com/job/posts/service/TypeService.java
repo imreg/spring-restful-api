@@ -3,14 +3,14 @@ package com.job.posts.service;
 import java.util.List;
 import org.springframework.stereotype.Service;
 import com.job.posts.entity.Type;
-import com.job.posts.repository.interfaces.TypeJpaRepositoryInterface;
+import com.job.posts.repository.TypeRepositoryInterface;
 
 @Service
 public class TypeService {
 
-    private final TypeJpaRepositoryInterface typeRepository;
+    private final TypeRepositoryInterface typeRepository;
 
-    public TypeService(TypeJpaRepositoryInterface typeRepository) {
+    public TypeService(TypeRepositoryInterface typeRepository) {
         this.typeRepository = typeRepository;
     }
     
