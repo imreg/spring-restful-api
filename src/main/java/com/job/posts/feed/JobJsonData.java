@@ -15,7 +15,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.job.posts.entity.Job;
 import com.job.posts.feed.wrappers.JobWrapper;
 import com.job.posts.repository.JobRepository;
-import com.job.posts.repository.records.JobsRecord;
 import com.job.posts.service.JobService;
 
 @Component

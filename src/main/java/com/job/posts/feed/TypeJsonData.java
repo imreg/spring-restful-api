@@ -39,7 +39,7 @@ public class TypeJsonData implements CommandLineRunner{
 				TypesWrapper typesWrapper = objectMapper.readValue(inputStream, TypesWrapper.class);
 	            List<Type> types = typesWrapper.getTypes();
 	            log.info("Reading {} types from JSON data and saving to the database.", types.size());
-	            // this.typeService.saveAll(types);
+	            this.typeService.saveAll(types);
 			} catch (IOException e) {
 				throw new RuntimeException("Failed to read JSON data", e);
 			}

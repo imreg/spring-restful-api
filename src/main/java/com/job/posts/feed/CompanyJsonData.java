@@ -14,8 +14,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.job.posts.entity.Company;
 import com.job.posts.feed.wrappers.CompaniesWrapper;
-import com.job.posts.repository.CompanyRepository;
-import com.job.posts.repository.records.CompaniesRecord;
 import com.job.posts.service.CompanyService;
 
 @Component
@@ -39,7 +37,7 @@ public class CompanyJsonData implements CommandLineRunner {
 				CompaniesWrapper companiesWrapper= objectMapper.readValue(inputStream, CompaniesWrapper.class);
                 List<Company> companies = companiesWrapper.getCompanies();
 				log.info("Reading {} runs from Type JSON data and saving to in-memory collection.", companies.size());
-                // this.companyService.saveAll(companies);
+                this.companyService.saveAll(companies);
 			} catch (IOException e) {
 				throw new RuntimeException("Failed to read JSON data", e);
 			}

@@ -108,6 +108,14 @@ public class JobService {
 	}
    
     public void save(Job job) {
+        Optional<Type> optionalType = this.typeRepository.findById(job.getType().getId());
+        Optional<Company> optionalCompany = this.companyRepository.findById(job.getType().getId());
+        
+        Type type = optionalType.orElse(null);       
+        Company company = optionalCompany.orElse(null);        
+        
+        job.setType(type);
+        job.setCompany(company);
     	this.jobRepository.save(job);
 	}
        
