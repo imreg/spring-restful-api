@@ -1,5 +1,12 @@
 # Jobs RestFul API Service
 
+###Execute Server:
+
+```
+./mvnw spring-boot:run
+```
+
+
 ### GET ALL
 
 ```
