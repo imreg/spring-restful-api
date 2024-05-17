@@ -102,4 +102,16 @@ public class JobService {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse);
         }
     }
+	
+	public Long count() {
+		return this.jobRepository.count();
+	}
+   
+    public void save(Job job) {
+    	this.jobRepository.save(job);
+	}
+       
+	public void saveAll(List<Job> job) {
+		job.stream().forEach(this::save);
+	}
 }

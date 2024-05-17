@@ -1,10 +1,7 @@
 package com.job.posts.service;
 
-import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.stereotype.Service;
-
 import com.job.posts.entity.Type;
 import com.job.posts.repository.interfaces.TypeJpaRepositoryInterface;
 
