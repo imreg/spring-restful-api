@@ -3,7 +3,7 @@
 ### GET ALL
 
 ```
-	http://localhost:8080/api/jobs
+http://localhost:8080/api/jobs
 ```
 
 ### GET By Id
