@@ -14,7 +14,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.job.posts.entity.Job;
 import com.job.posts.feed.wrappers.JobWrapper;
-import com.job.posts.repository.JobRepository;
 import com.job.posts.service.JobService;
 
 @Component
@@ -22,12 +21,10 @@ import com.job.posts.service.JobService;
 public class JobJsonData implements CommandLineRunner {
 private static final Logger log = LoggerFactory.getLogger(CompanyJsonData.class);
 	
-	private final JobRepository repository;
 	private final JobService jobService;
 	private final ObjectMapper objectMapper;
 	
-	public JobJsonData(JobRepository repository, ObjectMapper objectMapper, JobService jobService) {			
-			this.repository = repository;
+	public JobJsonData(ObjectMapper objectMapper, JobService jobService) {					
 			this.objectMapper = objectMapper;
 			this.jobService = jobService;
 	}

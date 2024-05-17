@@ -14,8 +14,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.job.posts.entity.Type;
 import com.job.posts.feed.wrappers.TypesWrapper;
-import com.job.posts.repository.TypeRepository;
-import com.job.posts.repository.records.TypesRecord;
 import com.job.posts.service.TypeService;
 
 @Component
