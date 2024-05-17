@@ -1,24 +1,24 @@
-### Jobs RestFul API Service
+# Jobs RestFul API Service
 
-GET ALL
+### GET ALL
 
-'''
+```
 	http://localhost:8080/api/jobs
-'''
+```
 
-GET By Id
+### GET By Id
 
-'''
+```
 http://localhost:8080/api/jobs/{id}
-'''
+```
 
-POST
-'''
+### POST
+```
 http://localhost:8080/api/jobs
-'''
+```
 
-Payload
-'''
+### Payload
+```
 {
     "title": "Junior React Developer",
     "type": {
@@ -35,16 +35,16 @@ Payload
         "phone": "555-555-5555"
     }
 }
-'''
+```
 
 
-PUT 
-'''
+### PUT 
+```
 http://localhost:8080/api/jobs/{id}
-'''
+```
 
-
-'''
+### Payload
+```
 {
     "id": 1,
     "title": "Junior React Developer",
@@ -63,11 +63,11 @@ http://localhost:8080/api/jobs/{id}
         "phone": "555-555-5555"
     }
 }
-'''
+```
 
 
-DELETE
+### DELETE
 
-'''
+```
 http://localhost:8080/api/jobs/{id}
-'''
+```
