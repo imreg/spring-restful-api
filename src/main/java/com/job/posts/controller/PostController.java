@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -33,10 +34,14 @@ public class PostController {
 		this.jobService = jobService;
 	}
 	
-	@GetMapping ("/jobs")
-	public List<Job> findAll() {
-		return this.jobService.findAll();
-	}
+    @GetMapping("/jobs")
+    public List<Job> findAll(@RequestParam(required = false) Integer limit) {
+        if (limit != null && limit > 0) {
+            return this.jobService.findLimitedJobs(limit);
+        } else {
+            return this.jobService.findAll();
+        }
+    }
 
 	@GetMapping ("/jobs/{id}")
 	public Optional<Job> findById(@PathVariable Long id) {

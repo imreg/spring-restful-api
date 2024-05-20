@@ -13,6 +13,14 @@
 http://localhost:8080/api/jobs
 ```
 
+### GET LIMITATION
+
+```
+http://localhost:8080/api/jobs?limit=3
+```
+
+
+
 ### GET By Id
 
 ```
