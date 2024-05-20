@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -35,6 +36,10 @@ public class JobService {
 
     public List<Job> findAll() {
 		return this.jobRepository.findAll();
+    }
+    
+    public List<Job> findLimitedJobs(int limit) {
+        return jobRepository.findAll(PageRequest.of(0, limit)).getContent();
     }
     
     public Optional<Job> findById(Long id) {
