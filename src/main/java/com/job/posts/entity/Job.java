@@ -11,30 +11,30 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "JOB")
+@Table(name = "Job")
 public class Job {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "TITLE")
+    @Column(name = "title")
     private String title;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "TYPE_ID")
+    @JoinColumn(name = "type_id")
     private Type type;
 
-    @Column(name = "LOCATION")
+    @Column(name = "location")
     private String location;
 
-    @Column(name = "DESCRIPTION")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "SALARY")
+    @Column(name = "salary")
     private String salary;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "COMPANY_ID")
+    @JoinColumn(name = "company_id")
     private Company company;
 
 	public Long getId() {
