@@ -15,22 +15,22 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "COMPANY")
+@Table(name = "Company")
 public class Company {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "NAME")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "DESCRIPTION")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "EMAIL")
+    @Column(name = "email")
     private String email;
     
-    @Column(name = "PHONE")
+    @Column(name = "phone")
     private String phone;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "company", cascade = CascadeType.ALL)
@@ -76,13 +76,4 @@ public class Company {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-
-//	public List<Job> getJobs() {
-//		return jobs;
-//	}
-//
-//	public void setJobs(List<Job> jobs) {
-//		this.jobs = jobs;
-//	}
-    
 }
